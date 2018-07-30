@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="com.seed.bean.User" table="login">
+		
+		
+	
+		<id name="uid" type="int" column="userid">
+			<generator class="assigned"/>
+		</id>
+
+
+       
+		<property name="username">
+			<column name="username" />
+		</property>
+		
+		<property name="password">
+			<column name="password" />
+		</property>
+	
+	  
+		
+	</class>
+</hibernate-mapping>
